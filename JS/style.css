@@ -1,0 +1,105 @@
+
+body {
+	background: #17308a;
+}
+
+
+.menu {
+
+}
+
+.menu a {
+	text-decoration: none;
+}
+
+.menu li {
+	position: relative;
+	list-style: none;
+}
+
+.menu__list {
+	display: flex;
+}
+
+/*(>) Применяется только к первому уровню */
+
+.menu__list>li {   
+	margin: 0px 10px 0px 0px;
+}
+
+.menu__list>li:hover .sub-menu__list{
+	display: block;
+}
+
+.menu__link {
+	color: #fff;
+}
+
+.sub-menu__list {
+	display: none;
+	min-width: 130px;
+	position: absolute;
+	left: 0;
+	top: 15px;
+	padding: 10px 0px 0px 0px;
+}
+
+.sub-menu__list>li{
+	background-color: #fff;
+}
+
+
+	
+.sub-menu__link{
+	color: black;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+
+.sub-sub-menu__list{
+	display: none;
+	min-width: 130px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	padding: 0px 0px 0px 5px;
+}
+
+.sub-sub-menu__list>li{
+	background-color: black;
+}
+
+.sub-sub-menu__link{
+	color: red;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.arrow {
+	position: absolute; 
+	right: 0;
+	top: 6px; 
+	width: 0;
+	height: 0;
+	border-top: 7px solid #fff;
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+}
+
+
+.menu__arrow {
+
+}
+
+body.mouse .menu__list>li:hover .sub-menu__list {
+	display: block;
+}
+
+body.mouse .sub-menu__list>li:hover .sub-sub-menu__list {
+	display: block;
+}
+
+
+
+
